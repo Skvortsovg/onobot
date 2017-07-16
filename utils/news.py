@@ -18,10 +18,6 @@ import botan
 
 from settings import KREMLIN_NEWS_LOCATION, ALL_KREMLIN_NEWS_LOCATION, MEGAFON_NEWS_LOCATION, ALL_MEGAFON_NEWS_LOCATION
 
-
-
-
-
 exclude = "[" + punctuation + "'0123456789[]—«»–]"
 alt_normal_forms = {"газа":"газ", "Песков":"песков"}
 cands = ['NOUN']

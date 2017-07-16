@@ -39,10 +39,10 @@ def error(bot, update, error):
 
 
 def update_all(bot, update):
-    for
     upd_news()
-    update_clusters()
-    set_hot_news()
+    for category in ['Kremlin', 'Megafon']:
+        update_clusters(category)
+        set_hot_news(category)
 
 
 def button(bot, update):
