@@ -1,0 +1,581 @@
+/usr/local/lib/python3.4/dist-packages/telegram/ext/messagehandler.py:94: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+2017-07-16 19:21:38,823 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+2017-07-16 19:21:41,602 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+2017-07-16 19:21:43,082 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+2017-07-16 19:21:43,972 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+2017-07-16 19:21:44,631 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+2017-07-16 19:21:44,963 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+2017-07-16 19:21:45,197 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+2017-07-16 19:21:45,414 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+/usr/local/lib/python3.4/dist-packages/telegram/ext/messagehandler.py:94: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+2017-07-16 20:10:31,244 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'None'.
+2017-07-16 20:10:31,378 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is None. Going to MainMenuState
+2017-07-16 20:10:31,378 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 enter new state:<class 'menu.MainMenuState'> from:BaseState
+2017-07-16 20:10:31,379 - menu - INFO - state is <class 'type'> = <class 'menu.MainMenuState'>
+2017-07-16 20:10:31,379 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 saving session state:MainMenuState timeout:604800
+2017-07-16 20:10:31,379 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/dispatcher.py", line 265, in process_update
+    handler.handle_update(update, self)
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/commandhandler.py", line 136, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/skv/skv_onobot/menu.py", line 65, in __init__
+    self.new_state(MainMenuState)
+  File "/home/skv/skv_onobot/menu.py", line 122, in new_state
+    self.save_state(timeout=settings.SESSION_TIMEOUT)
+  File "/home/skv/skv_onobot/menu.py", line 98, in save_state
+    self.ctx.p_set_state(str(self), timeout=timeout)
+  File "/home/skv/skv_onobot/cache.py", line 578, in p_set_state
+    self.p_set_('state', n, timeout=timeout, persistent=False)
+  File "/home/skv/skv_onobot/cache.py", line 393, in p_set_
+    self._expire(timeout=timeout, persistent=persistent)
+  File "/home/skv/skv_onobot/cache.py", line 381, in _expire
+    elif isinstance(timeout, (int, long, float, timedelta,)):
+NameError: name 'long' is not defined
+/usr/local/lib/python3.4/dist-packages/telegram/ext/messagehandler.py:94: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+2017-07-16 20:12:42,833 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'None'.
+2017-07-16 20:12:42,834 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is None. Going to MainMenuState
+2017-07-16 20:12:42,834 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 enter new state:<class 'menu.MainMenuState'> from:BaseState
+2017-07-16 20:12:42,835 - menu - INFO - state is <class 'type'> = <class 'menu.MainMenuState'>
+2017-07-16 20:12:42,835 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 saving session state:MainMenuState timeout:604800
+2017-07-16 20:12:42,970 - utils.functions - INFO - Sending message to 92950483
+2017-07-16 20:12:45,207 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+2017-07-16 20:12:49,822 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+/usr/local/lib/python3.4/dist-packages/telegram/ext/messagehandler.py:94: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+2017-07-16 20:13:17,856 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'None'.
+2017-07-16 20:13:17,986 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is None. Going to MainMenuState
+2017-07-16 20:13:17,986 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 enter new state:<class 'menu.MainMenuState'> from:BaseState
+2017-07-16 20:13:17,987 - menu - INFO - state is <class 'type'> = <class 'menu.MainMenuState'>
+2017-07-16 20:13:17,987 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 saving session state:MainMenuState timeout:604800
+2017-07-16 20:13:18,118 - utils.functions - INFO - Sending message to 92950483
+2017-07-16 20:13:19,759 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+2017-07-16 20:13:29,377 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+2017-07-16 20:13:33,710 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+2017-07-16 20:14:03,555 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+/usr/local/lib/python3.4/dist-packages/telegram/ext/messagehandler.py:94: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+2017-07-16 20:14:20,513 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'None'.
+2017-07-16 20:14:20,647 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is None. Going to MainMenuState
+2017-07-16 20:14:20,648 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 enter new state:<class 'menu.MainMenuState'> from:BaseState
+2017-07-16 20:14:20,648 - menu - INFO - state is <class 'type'> = <class 'menu.MainMenuState'>
+2017-07-16 20:14:20,648 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 saving session state:MainMenuState timeout:604800
+2017-07-16 20:14:20,783 - utils.functions - INFO - Sending message to 92950483
+2017-07-16 20:14:23,800 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+/usr/local/lib/python3.4/dist-packages/telegram/ext/messagehandler.py:94: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+2017-07-16 20:16:58,575 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'None'.
+2017-07-16 20:16:58,704 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is None. Going to MainMenuState
+2017-07-16 20:16:58,704 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 enter new state:<class 'menu.MainMenuState'> from:BaseState
+2017-07-16 20:16:58,704 - menu - INFO - state is <class 'type'> = <class 'menu.MainMenuState'>
+2017-07-16 20:16:58,705 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 saving session state:MainMenuState timeout:604800
+2017-07-16 20:16:58,834 - utils.functions - INFO - Sending message to 92950483
+2017-07-16 20:17:00,259 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+2017-07-16 20:17:13,043 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+/usr/local/lib/python2.7/dist-packages/telegram/ext/messagehandler.py:94: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+/usr/local/lib/python2.7/dist-packages/telegram/vendor/ptb_urllib3/urllib3/util/ssl_.py:334: SNIMissingWarning: An HTTPS request has been made, but the SNI (Subject Name Indication) extension to TLS is not available on this platform. This may cause the server to present an incorrect TLS certificate, which can cause validation failures. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  SNIMissingWarning
+/usr/local/lib/python2.7/dist-packages/telegram/vendor/ptb_urllib3/urllib3/util/ssl_.py:132: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecurePlatformWarning
+/usr/local/lib/python2.7/dist-packages/telegram/vendor/ptb_urllib3/urllib3/util/ssl_.py:132: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecurePlatformWarning
+2017-07-16 20:17:46,906 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is None.
+2017-07-16 20:17:47,036 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is None. Going to MainMenuState
+2017-07-16 20:17:47,036 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 enter new state:<class 'menu.MainMenuState'> from:BaseState
+2017-07-16 20:17:47,036 - menu - INFO - state is <type 'type'> = <class 'menu.MainMenuState'>
+2017-07-16 20:17:47,036 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 saving session state:MainMenuState timeout:604800
+2017-07-16 20:17:47,167 - utils.functions - INFO - Sending message to 92950483
+2017-07-16 20:17:48,215 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is MainMenuState.
+2017-07-16 20:17:48,215 - utils.functions - INFO - Sending message to 92950483
+2017-07-16 20:17:49,460 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is MainMenuState.
+2017-07-16 20:17:49,461 - utils.functions - INFO - Sending message to 92950483
+/usr/local/lib/python2.7/dist-packages/telegram/ext/messagehandler.py:94: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+/usr/local/lib/python2.7/dist-packages/telegram/vendor/ptb_urllib3/urllib3/util/ssl_.py:334: SNIMissingWarning: An HTTPS request has been made, but the SNI (Subject Name Indication) extension to TLS is not available on this platform. This may cause the server to present an incorrect TLS certificate, which can cause validation failures. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  SNIMissingWarning
+/usr/local/lib/python2.7/dist-packages/telegram/vendor/ptb_urllib3/urllib3/util/ssl_.py:132: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecurePlatformWarning
+/usr/local/lib/python3.4/dist-packages/telegram/ext/messagehandler.py:94: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+2017-07-16 20:33:47,852 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'None'.
+2017-07-16 20:33:47,982 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is None. Going to MainMenuState
+2017-07-16 20:33:47,983 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 enter new state:<class 'menu.MainMenuState'> from:BaseState
+2017-07-16 20:33:47,983 - menu - INFO - state is <class 'type'> = <class 'menu.MainMenuState'>
+2017-07-16 20:33:47,983 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 saving session state:MainMenuState timeout:604800
+2017-07-16 20:33:48,114 - utils.functions - INFO - Sending message to 92950483
+2017-07-16 20:33:49,742 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+/usr/local/lib/python3.4/dist-packages/telegram/ext/messagehandler.py:94: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+2017-07-16 20:35:38,205 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+2017-07-16 20:35:42,202 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+2017-07-16 20:35:49,049 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'None'.
+2017-07-16 20:35:49,183 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is None. Going to MainMenuState
+2017-07-16 20:35:49,184 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 enter new state:<class 'menu.MainMenuState'> from:BaseState
+2017-07-16 20:35:49,184 - menu - INFO - state is <class 'type'> = <class 'menu.MainMenuState'>
+2017-07-16 20:35:49,184 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 saving session state:MainMenuState timeout:604800
+2017-07-16 20:35:49,318 - utils.functions - INFO - Sending message to 92950483
+2017-07-16 20:35:50,317 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+/usr/local/lib/python3.4/dist-packages/telegram/ext/messagehandler.py:94: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+2017-07-16 20:43:41,680 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'None'.
+2017-07-16 20:43:41,815 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is None. Going to MainMenuState
+2017-07-16 20:43:41,816 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 enter new state:<class 'menu.MainMenuState'> from:BaseState
+2017-07-16 20:43:41,816 - menu - INFO - state is <class 'type'> = <class 'menu.MainMenuState'>
+2017-07-16 20:43:41,816 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 saving session state:MainMenuState timeout:604800
+2017-07-16 20:43:41,951 - utils.functions - INFO - Sending message to 92950483
+/usr/local/lib/python3.4/dist-packages/telegram/ext/messagehandler.py:94: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+2017-07-16 20:45:08,048 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'None'.
+2017-07-16 20:45:08,183 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is None. Going to MainMenuState
+2017-07-16 20:45:08,184 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 enter new state:<class 'menu.MainMenuState'> from:BaseState
+2017-07-16 20:45:08,184 - menu - INFO - state is <class 'type'> = <class 'menu.MainMenuState'>
+2017-07-16 20:45:08,184 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 saving session state:MainMenuState timeout:604800
+2017-07-16 20:45:08,323 - utils.functions - INFO - Sending message to 92950483
+2017-07-16 20:45:17,722 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+2017-07-16 20:45:17,722 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/dispatcher.py", line 265, in process_update
+    handler.handle_update(update, self)
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/commandhandler.py", line 136, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/skv/skv_onobot/menu.py", line 71, in __init__
+    self.on_input(value)
+  File "/home/skv/skv_onobot/menu.py", line 185, in on_input
+    value=value.encode('utf-8'),
+AttributeError: 'bytes' object has no attribute 'encode'
+/usr/local/lib/python3.4/dist-packages/telegram/ext/messagehandler.py:94: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+2017-07-16 20:45:29,949 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'None'.
+2017-07-16 20:45:30,079 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is None. Going to MainMenuState
+2017-07-16 20:45:30,080 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 enter new state:<class 'menu.MainMenuState'> from:BaseState
+2017-07-16 20:45:30,080 - menu - INFO - state is <class 'type'> = <class 'menu.MainMenuState'>
+2017-07-16 20:45:30,080 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 saving session state:MainMenuState timeout:604800
+2017-07-16 20:45:30,209 - utils.functions - INFO - Sending message to 92950483
+2017-07-16 20:45:34,435 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+2017-07-16 20:45:34,435 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/dispatcher.py", line 265, in process_update
+    handler.handle_update(update, self)
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/messagehandler.py", line 124, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/skv/skv_onobot/menu.py", line 71, in __init__
+    self.on_input(value)
+  File "/home/skv/skv_onobot/menu.py", line 185, in on_input
+    value=value.encode('utf-8'),
+AttributeError: 'bytes' object has no attribute 'encode'
+/usr/local/lib/python3.4/dist-packages/telegram/ext/messagehandler.py:94: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+2017-07-16 20:46:47,629 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'None'.
+2017-07-16 20:46:47,762 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is None. Going to MainMenuState
+2017-07-16 20:46:47,763 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 enter new state:<class 'menu.MainMenuState'> from:BaseState
+2017-07-16 20:46:47,763 - menu - INFO - state is <class 'type'> = <class 'menu.MainMenuState'>
+2017-07-16 20:46:47,763 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 saving session state:MainMenuState timeout:604800
+2017-07-16 20:46:47,894 - utils.functions - INFO - Sending message to 92950483
+2017-07-16 20:46:48,857 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+2017-07-16 20:46:48,857 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/dispatcher.py", line 265, in process_update
+    handler.handle_update(update, self)
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/messagehandler.py", line 124, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/skv/skv_onobot/menu.py", line 71, in __init__
+    self.on_input(value)
+  File "/home/skv/skv_onobot/menu.py", line 185, in on_input
+    value=value.encode('utf-8'),
+AttributeError: 'bytes' object has no attribute 'encode'
+/usr/local/lib/python3.4/dist-packages/telegram/ext/messagehandler.py:94: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+2017-07-16 20:47:20,282 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'None'.
+2017-07-16 20:47:20,419 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is None. Going to MainMenuState
+2017-07-16 20:47:20,419 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 enter new state:<class 'menu.MainMenuState'> from:BaseState
+2017-07-16 20:47:20,419 - menu - INFO - state is <class 'type'> = <class 'menu.MainMenuState'>
+2017-07-16 20:47:20,419 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 saving session state:MainMenuState timeout:604800
+2017-07-16 20:47:20,553 - utils.functions - INFO - Sending message to 92950483
+2017-07-16 20:47:23,830 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+2017-07-16 20:47:23,830 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 value is b'qqq'.
+/usr/local/lib/python3.4/dist-packages/telegram/ext/messagehandler.py:94: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+2017-07-16 20:50:52,788 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'None'.
+2017-07-16 20:50:52,928 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is None. Going to MainMenuState
+2017-07-16 20:50:52,928 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 enter new state:<class 'menu.MainMenuState'> from:BaseState
+2017-07-16 20:50:52,928 - menu - INFO - state is <class 'type'> = <class 'menu.MainMenuState'>
+2017-07-16 20:50:52,928 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 saving session state:MainMenuState timeout:604800
+2017-07-16 20:50:53,069 - utils.functions - INFO - Sending message to 92950483
+2017-07-16 20:50:57,296 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+2017-07-16 20:50:57,297 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 value is b'www'.
+2017-07-16 20:55:10,606 - telegram.ext.updater - ERROR - Error while getting Updates: Timed out
+2017-07-16 20:55:10,607 - bot - ERROR - Update: None caused an error:
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/logging/__init__.py", line 978, in emit
+    msg = self.format(record)
+  File "/usr/lib/python3.4/logging/__init__.py", line 828, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.4/logging/__init__.py", line 573, in format
+    record.exc_text = self.formatException(record.exc_info)
+  File "/usr/lib/python3.4/logging/__init__.py", line 523, in formatException
+    traceback.print_exception(ei[0], ei[1], tb, None, sio)
+  File "/usr/lib/python3.4/traceback.py", line 169, in print_exception
+    for line in _format_exception_iter(etype, value, tb, limit, chain):
+  File "/usr/lib/python3.4/traceback.py", line 146, in _format_exception_iter
+    for value, tb in values:
+  File "/usr/lib/python3.4/traceback.py", line 125, in _iter_chain
+    context = exc.__context__
+AttributeError: 'NoneType' object has no attribute '__context__'
+Call stack:
+  File "/usr/lib/python3.4/threading.py", line 888, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/updater.py", line 133, in _thread_wrapper
+    target(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/dispatcher.py", line 214, in start
+    self.process_update(update)
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/dispatcher.py", line 258, in process_update
+    self.dispatch_error(None, update)
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/dispatcher.py", line 369, in dispatch_error
+    callback(self.bot, update, error)
+  File "/home/skv/skv_onobot/bot.py", line 36, in error
+    log.exception(error)
+Message: TimedOut()
+Arguments: ()
+2017-07-16 20:55:10,642 - telegram.ext.updater - ERROR - unhandled exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/updater.py", line 133, in _thread_wrapper
+    target(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/dispatcher.py", line 214, in start
+    self.process_update(update)
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/dispatcher.py", line 258, in process_update
+    self.dispatch_error(None, update)
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/dispatcher.py", line 369, in dispatch_error
+    callback(self.bot, update, error)
+  File "/home/skv/skv_onobot/bot.py", line 37, in error
+    notify_developers(bot, update, str(error))
+NameError: name 'notify_developers' is not defined
+/usr/local/lib/python3.4/dist-packages/telegram/ext/messagehandler.py:94: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+2017-07-16 21:00:45,640 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'None'.
+2017-07-16 21:00:45,770 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is None. Going to MainMenuState
+2017-07-16 21:00:45,771 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 enter new state:<class 'menu.MainMenuState'> from:BaseState
+2017-07-16 21:00:45,771 - menu - INFO - state is <class 'type'> = <class 'menu.MainMenuState'>
+2017-07-16 21:00:45,771 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 saving session state:MainMenuState timeout:604800
+2017-07-16 21:00:45,902 - utils.functions - INFO - Sending message to 92950483
+2017-07-16 21:00:47,558 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+2017-07-16 21:00:47,559 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 value is b'\xf0\x9f\x93\xa3'.
+2017-07-16 21:00:49,879 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+2017-07-16 21:00:49,879 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 value is b'\xf0\x9f\x8f\xb0'.
+2017-07-16 21:01:28,296 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+2017-07-16 21:01:28,296 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 value is b'\xf0\x9f\x8f\xb0'.
+2017-07-16 21:01:28,961 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+2017-07-16 21:01:28,962 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 value is b'\xf0\x9f\x93\xa3'.
+/usr/local/lib/python3.4/dist-packages/telegram/ext/messagehandler.py:94: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+2017-07-16 21:11:55,072 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'None'.
+2017-07-16 21:11:55,199 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is None. Going to MainMenuState
+2017-07-16 21:11:55,200 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 enter new state:<class 'menu.MainMenuState'> from:BaseState
+2017-07-16 21:11:55,200 - menu - INFO - state is <class 'type'> = <class 'menu.MainMenuState'>
+2017-07-16 21:11:55,200 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 saving session state:MainMenuState timeout:604800
+2017-07-16 21:11:55,328 - utils.functions - INFO - Sending message to 92950483
+2017-07-16 21:11:56,273 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+2017-07-16 21:11:56,273 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 value is b'\xf0\x9f\x93\xa3'.
+/usr/local/lib/python3.4/dist-packages/telegram/ext/messagehandler.py:94: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+2017-07-16 21:12:56,350 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'None'.
+2017-07-16 21:12:56,484 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is None. Going to MainMenuState
+2017-07-16 21:12:56,484 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 enter new state:<class 'menu.MainMenuState'> from:BaseState
+2017-07-16 21:12:56,485 - menu - INFO - state is <class 'type'> = <class 'menu.MainMenuState'>
+2017-07-16 21:12:56,485 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 saving session state:MainMenuState timeout:604800
+2017-07-16 21:12:56,619 - utils.functions - INFO - Sending message to 92950483
+2017-07-16 21:12:57,894 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+2017-07-16 21:12:57,895 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 value is b'789'.
+2017-07-16 21:15:10,410 - telegram.ext.updater - ERROR - Error while getting Updates: Timed out
+2017-07-16 21:15:10,411 - bot - ERROR - Update: None caused an error:
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/logging/__init__.py", line 978, in emit
+    msg = self.format(record)
+  File "/usr/lib/python3.4/logging/__init__.py", line 828, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.4/logging/__init__.py", line 573, in format
+    record.exc_text = self.formatException(record.exc_info)
+  File "/usr/lib/python3.4/logging/__init__.py", line 523, in formatException
+    traceback.print_exception(ei[0], ei[1], tb, None, sio)
+  File "/usr/lib/python3.4/traceback.py", line 169, in print_exception
+    for line in _format_exception_iter(etype, value, tb, limit, chain):
+  File "/usr/lib/python3.4/traceback.py", line 146, in _format_exception_iter
+    for value, tb in values:
+  File "/usr/lib/python3.4/traceback.py", line 125, in _iter_chain
+    context = exc.__context__
+AttributeError: 'NoneType' object has no attribute '__context__'
+Call stack:
+  File "/usr/lib/python3.4/threading.py", line 888, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/updater.py", line 133, in _thread_wrapper
+    target(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/dispatcher.py", line 214, in start
+    self.process_update(update)
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/dispatcher.py", line 258, in process_update
+    self.dispatch_error(None, update)
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/dispatcher.py", line 369, in dispatch_error
+    callback(self.bot, update, error)
+  File "/home/skv/skv_onobot/bot.py", line 36, in error
+    log.exception(error)
+Message: TimedOut()
+Arguments: ()
+2017-07-16 21:15:10,415 - telegram.ext.updater - ERROR - unhandled exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/updater.py", line 133, in _thread_wrapper
+    target(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/dispatcher.py", line 214, in start
+    self.process_update(update)
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/dispatcher.py", line 258, in process_update
+    self.dispatch_error(None, update)
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/dispatcher.py", line 369, in dispatch_error
+    callback(self.bot, update, error)
+  File "/home/skv/skv_onobot/bot.py", line 37, in error
+    notify_developers(bot, update, str(error))
+NameError: name 'notify_developers' is not defined
+/usr/local/lib/python3.4/dist-packages/telegram/ext/messagehandler.py:94: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+2017-07-16 21:19:29,274 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'None'.
+2017-07-16 21:19:29,402 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is None. Going to MainMenuState
+2017-07-16 21:19:29,402 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 enter new state:<class 'menu.MainMenuState'> from:BaseState
+2017-07-16 21:19:29,402 - menu - INFO - state is <class 'type'> = <class 'menu.MainMenuState'>
+2017-07-16 21:19:29,403 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 saving session state:MainMenuState timeout:604800
+2017-07-16 21:19:29,531 - utils.functions - INFO - Sending message to 92950483
+2017-07-16 21:19:30,519 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+2017-07-16 21:19:30,519 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 value is b'789'.
+/usr/local/lib/python2.7/dist-packages/telegram/ext/messagehandler.py:94: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+/usr/local/lib/python2.7/dist-packages/telegram/vendor/ptb_urllib3/urllib3/util/ssl_.py:334: SNIMissingWarning: An HTTPS request has been made, but the SNI (Subject Name Indication) extension to TLS is not available on this platform. This may cause the server to present an incorrect TLS certificate, which can cause validation failures. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  SNIMissingWarning
+/usr/local/lib/python2.7/dist-packages/telegram/vendor/ptb_urllib3/urllib3/util/ssl_.py:132: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecurePlatformWarning
+2017-07-16 21:24:57,791 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+2017-07-16 21:24:57,792 - bot - ERROR - Update: None caused an error:
+2017-07-16 21:24:58,845 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+2017-07-16 21:24:58,852 - bot - ERROR - Update: None caused an error:
+2017-07-16 21:24:58,852 - bot - ERROR - Conflict: terminated by other long poll or webhook (409)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/telegram/ext/dispatcher.py", line 203, in start
+    update = self.update_queue.get(True, 1)
+  File "/usr/lib/python2.7/Queue.py", line 176, in get
+    raise Empty
+Empty
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/logging/__init__.py", line 978, in emit
+    msg = self.format(record)
+  File "/usr/lib/python3.4/logging/__init__.py", line 828, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.4/logging/__init__.py", line 573, in format
+    record.exc_text = self.formatException(record.exc_info)
+  File "/usr/lib/python3.4/logging/__init__.py", line 523, in formatException
+    traceback.print_exception(ei[0], ei[1], tb, None, sio)
+  File "/usr/lib/python3.4/traceback.py", line 169, in print_exception
+    for line in _format_exception_iter(etype, value, tb, limit, chain):
+  File "/usr/lib/python3.4/traceback.py", line 146, in _format_exception_iter
+    for value, tb in values:
+  File "/usr/lib/python3.4/traceback.py", line 125, in _iter_chain
+    context = exc.__context__
+AttributeError: 'NoneType' object has no attribute '__context__'
+Call stack:
+  File "/usr/lib/python3.4/threading.py", line 888, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/updater.py", line 133, in _thread_wrapper
+    target(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/dispatcher.py", line 214, in start
+    self.process_update(update)
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/dispatcher.py", line 258, in process_update
+    self.dispatch_error(None, update)
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/dispatcher.py", line 369, in dispatch_error
+    callback(self.bot, update, error)
+  File "/home/skv/skv_onobot/bot.py", line 36, in error
+    log.exception(error)
+Message: NetworkError()
+Arguments: ()
+2017-07-16 21:24:59,896 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+2017-07-16 21:24:59,897 - bot - ERROR - Update: None caused an error:
+2017-07-16 21:25:01,452 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+2017-07-16 21:25:01,492 - bot - ERROR - Update: None caused an error:
+2017-07-16 21:25:01,492 - bot - ERROR - Conflict: terminated by other long poll or webhook (409)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/telegram/ext/dispatcher.py", line 203, in start
+    update = self.update_queue.get(True, 1)
+  File "/usr/lib/python2.7/Queue.py", line 176, in get
+    raise Empty
+Empty
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/logging/__init__.py", line 978, in emit
+    msg = self.format(record)
+  File "/usr/lib/python3.4/logging/__init__.py", line 828, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.4/logging/__init__.py", line 573, in format
+    record.exc_text = self.formatException(record.exc_info)
+  File "/usr/lib/python3.4/logging/__init__.py", line 523, in formatException
+    traceback.print_exception(ei[0], ei[1], tb, None, sio)
+  File "/usr/lib/python3.4/traceback.py", line 169, in print_exception
+    for line in _format_exception_iter(etype, value, tb, limit, chain):
+  File "/usr/lib/python3.4/traceback.py", line 146, in _format_exception_iter
+    for value, tb in values:
+  File "/usr/lib/python3.4/traceback.py", line 125, in _iter_chain
+    context = exc.__context__
+AttributeError: 'NoneType' object has no attribute '__context__'
+Call stack:
+  File "/usr/lib/python3.4/threading.py", line 888, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/updater.py", line 133, in _thread_wrapper
+    target(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/dispatcher.py", line 214, in start
+    self.process_update(update)
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/dispatcher.py", line 258, in process_update
+    self.dispatch_error(None, update)
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/dispatcher.py", line 369, in dispatch_error
+    callback(self.bot, update, error)
+  File "/home/skv/skv_onobot/bot.py", line 36, in error
+    log.exception(error)
+Message: NetworkError()
+Arguments: ()
+2017-07-16 21:25:02,503 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+2017-07-16 21:25:02,503 - bot - ERROR - Update: None caused an error:
+2017-07-16 21:25:03,291 - telegram.ext.dispatcher - ERROR - An uncaught error was raised while processing the update
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/telegram/ext/dispatcher.py", line 265, in process_update
+    handler.handle_update(update, self)
+  File "/usr/local/lib/python2.7/dist-packages/telegram/ext/messagehandler.py", line 124, in handle_update
+    return self.callback(dispatcher.bot, update, **optional_args)
+  File "/home/skv/skv_onobot/menu.py", line 34, in __init__
+    state, lang, is_authodized, = ctx.apply()
+  File "/home/skv/skv_onobot/cache.py", line 228, in apply
+    res = self.pipeline.execute()
+  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 2626, in execute
+    return execute(conn, stack, raise_on_error)
+  File "/usr/local/lib/python2.7/dist-packages/redis/client.py", line 2549, in _execute_transaction
+    r = self.response_callbacks[command_name](r, **options)
+  File "/home/skv/skv_onobot/cache.py", line 30, in <lambda>
+    self.set_response_callback('HGET', lambda o: pickle.loads(o) if o else None)
+ValueError: unsupported pickle protocol: 3
+2017-07-16 21:25:04,807 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+2017-07-16 21:25:04,836 - bot - ERROR - Update: None caused an error:
+2017-07-16 21:25:04,836 - bot - ERROR - Conflict: terminated by other long poll or webhook (409)
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/telegram/ext/dispatcher.py", line 203, in start
+    update = self.update_queue.get(True, 1)
+  File "/usr/lib/python2.7/Queue.py", line 176, in get
+    raise Empty
+Empty
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.4/logging/__init__.py", line 978, in emit
+    msg = self.format(record)
+  File "/usr/lib/python3.4/logging/__init__.py", line 828, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.4/logging/__init__.py", line 573, in format
+    record.exc_text = self.formatException(record.exc_info)
+  File "/usr/lib/python3.4/logging/__init__.py", line 523, in formatException
+    traceback.print_exception(ei[0], ei[1], tb, None, sio)
+  File "/usr/lib/python3.4/traceback.py", line 169, in print_exception
+    for line in _format_exception_iter(etype, value, tb, limit, chain):
+  File "/usr/lib/python3.4/traceback.py", line 146, in _format_exception_iter
+    for value, tb in values:
+  File "/usr/lib/python3.4/traceback.py", line 125, in _iter_chain
+    context = exc.__context__
+AttributeError: 'NoneType' object has no attribute '__context__'
+Call stack:
+  File "/usr/lib/python3.4/threading.py", line 888, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.4/threading.py", line 920, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.4/threading.py", line 868, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/updater.py", line 133, in _thread_wrapper
+    target(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/dispatcher.py", line 214, in start
+    self.process_update(update)
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/dispatcher.py", line 258, in process_update
+    self.dispatch_error(None, update)
+  File "/usr/local/lib/python3.4/dist-packages/telegram/ext/dispatcher.py", line 369, in dispatch_error
+    callback(self.bot, update, error)
+  File "/home/skv/skv_onobot/bot.py", line 36, in error
+    log.exception(error)
+Message: NetworkError()
+Arguments: ()
+2017-07-16 21:25:05,705 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+2017-07-16 21:25:05,706 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 value is b'/start'.
+2017-07-16 21:25:05,858 - telegram.ext.updater - ERROR - Error while getting Updates: Conflict: terminated by other long poll or webhook (409)
+2017-07-16 21:25:05,859 - bot - ERROR - Update: None caused an error:
+/usr/local/lib/python2.7/dist-packages/telegram/ext/messagehandler.py:94: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+/usr/local/lib/python2.7/dist-packages/telegram/vendor/ptb_urllib3/urllib3/util/ssl_.py:334: SNIMissingWarning: An HTTPS request has been made, but the SNI (Subject Name Indication) extension to TLS is not available on this platform. This may cause the server to present an incorrect TLS certificate, which can cause validation failures. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  SNIMissingWarning
+/usr/local/lib/python2.7/dist-packages/telegram/vendor/ptb_urllib3/urllib3/util/ssl_.py:132: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecurePlatformWarning
+2017-07-16 21:25:30,680 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is None.
+2017-07-16 21:25:30,808 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is None. Going to MainMenuState
+2017-07-16 21:25:30,809 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 enter new state:<class 'menu.MainMenuState'> from:BaseState
+2017-07-16 21:25:30,809 - menu - INFO - state is <type 'type'> = <class 'menu.MainMenuState'>
+2017-07-16 21:25:30,809 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 saving session state:MainMenuState timeout:604800
+2017-07-16 21:25:30,938 - utils.functions - INFO - Sending message to 92950483
+/usr/local/lib/python2.7/dist-packages/telegram/vendor/ptb_urllib3/urllib3/util/ssl_.py:132: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecurePlatformWarning
+2017-07-16 21:25:32,682 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is MainMenuState.
+2017-07-16 21:25:32,682 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 value is 789.
+2017-07-16 21:25:32,683 - utils.functions - INFO - Sending message to 92950483
+2017-07-16 21:25:34,126 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is MainMenuState.
+2017-07-16 21:25:34,126 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 value is 789.
+2017-07-16 21:25:34,126 - utils.functions - INFO - Sending message to 92950483
+/usr/local/lib/python2.7/dist-packages/telegram/ext/messagehandler.py:94: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+/usr/local/lib/python2.7/dist-packages/telegram/vendor/ptb_urllib3/urllib3/util/ssl_.py:334: SNIMissingWarning: An HTTPS request has been made, but the SNI (Subject Name Indication) extension to TLS is not available on this platform. This may cause the server to present an incorrect TLS certificate, which can cause validation failures. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  SNIMissingWarning
+/usr/local/lib/python2.7/dist-packages/telegram/vendor/ptb_urllib3/urllib3/util/ssl_.py:132: InsecurePlatformWarning: A true SSLContext object is not available. This prevents urllib3 from configuring SSL appropriately and may cause certain SSL connections to fail. You can upgrade to a newer version of Python to solve this. For more information, see https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  InsecurePlatformWarning
+/usr/local/lib/python3.4/dist-packages/telegram/ext/messagehandler.py:94: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+2017-07-16 21:30:12,772 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'None'.
+2017-07-16 21:30:12,901 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is None. Going to MainMenuState
+2017-07-16 21:30:12,901 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 enter new state:<class 'menu.MainMenuState'> from:BaseState
+2017-07-16 21:30:12,902 - menu - INFO - state is <class 'type'> = <class 'menu.MainMenuState'>
+2017-07-16 21:30:12,902 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 saving session state:MainMenuState timeout:604800
+2017-07-16 21:30:13,033 - utils.functions - INFO - Sending message to 92950483
+2017-07-16 21:30:14,076 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is b'MainMenuState'.
+2017-07-16 21:30:14,077 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 value is b'789'.
+/usr/local/lib/python3.4/dist-packages/telegram/ext/messagehandler.py:94: UserWarning: Using a list of filters in MessageHandler is getting deprecated, please use bitwise operators (& and |) instead. More info: https://git.io/vPTbc.
+  warnings.warn('Using a list of filters in MessageHandler is getting '
+2017-07-16 21:32:41,860 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is None.
+2017-07-16 21:32:41,987 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is None. Going to MainMenuState
+2017-07-16 21:32:41,987 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 enter new state:<class 'menu.MainMenuState'> from:BaseState
+2017-07-16 21:32:41,987 - menu - INFO - state is <class 'type'> = <class 'menu.MainMenuState'>
+2017-07-16 21:32:41,987 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 saving session state:MainMenuState timeout:604800
+2017-07-16 21:32:42,113 - utils.functions - INFO - Sending message to 92950483
+2017-07-16 21:32:51,170 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is MainMenuState.
+2017-07-16 21:32:51,171 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 value is 789.
+2017-07-16 21:32:51,171 - utils.functions - INFO - Sending message to 92950483
+2017-07-16 21:32:52,772 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is MainMenuState.
+2017-07-16 21:32:52,772 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 value is 789.
+2017-07-16 21:32:52,773 - utils.functions - INFO - Sending message to 92950483
+2017-07-16 21:36:45,234 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is MainMenuState.
+2017-07-16 21:36:45,234 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 value is 789.
+2017-07-16 21:36:45,235 - utils.functions - INFO - Sending message to 92950483
+2017-07-16 21:36:47,054 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 state is MainMenuState.
+2017-07-16 21:36:47,055 - menu - INFO - chat:92950483 user:@skvortsovg id:92950483 value is 789.
+2017-07-16 21:36:47,055 - utils.functions - INFO - Sending message to 92950483

@@ -1,0 +1,34 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2016-07-30 08:08+MSK\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: UTF-8\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+msgid "LABEL_CANCEL_BUTTON"
+msgstr "❌ Отмена"
+
+msgid "LABEL_BACK_BUTTON"
+msgstr "⬅️ Назад"
+
+msgid "MAIN_MENU_STATE_TEXT"
+msgstr "Меню"
+
+msgid "MEGAFON_STATE_TEXT"
+msgstr "456"
+
+msgid "KREMLIN_STATE_TEXT"
+msgstr "789"
+
+msgid "GREET_NEW_USER_TEXT"
+msgstr "Привет!"

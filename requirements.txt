@@ -1,0 +1,11 @@
+python-telegram-bot>=6.0.1
+redis>=2.10.5
+beautifulsoup4==4.4.1
+pymorphy2==0.8
+nltk==3.2.2
+requests
+pandas
+scipy
+git+git://github.com/codelucas/newspaper.git
+urllib3
+psycopg2
