@@ -10,5 +10,4 @@ from .functions import (
     edit_async_message_markup,
 )
 
-from .botan import *
 from .news import *

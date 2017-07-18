@@ -14,9 +14,16 @@ from random import choice
 from scipy.cluster.hierarchy import fcluster, linkage
 from newspaper import Article
 import re
-import botan
+import logging
+from .botan import *
+
+
+log = logging.getLogger(__name__)
+
 
 from settings import KREMLIN_NEWS_LOCATION, ALL_KREMLIN_NEWS_LOCATION, MEGAFON_NEWS_LOCATION, ALL_MEGAFON_NEWS_LOCATION
+
+
 
 exclude = "[" + punctuation + "'0123456789[]—«»–]"
 alt_normal_forms = {"газа":"газ", "Песков":"песков"}
@@ -100,16 +107,16 @@ def _upb_news(category, medias):
             if datetime.now() - datetime.strptime(news[5], "%d %b %Y %H:%M:%S") < timedelta(days=1):
                 article = Article(news[2], language='ru')
                 article.download()
-            try:
-                article.parse()
-            except:
-                pass
-            news.append(article.text)
-            news.append(normal_form(article.text))
-            if (('cluster' in news_file.columns) & ('hot_topic' in news_file.columns)):
-                news += [0,0]
-            news_file.loc[len(news_file)]=news
-            counter += 1
+                try:
+                    article.parse()
+                except:
+                    pass
+                news.append(article.text)
+                news.append(normal_form(article.text))
+                if (('cluster' in news_file.columns) & ('hot_topic' in news_file.columns)):
+                    news += [0,0]
+                news_file.loc[len(news_file)]=news
+                counter += 1
 
     news_file.drop_duplicates('link', inplace = True)
     news_file['date'] = news_file['date'].astype('str')
@@ -135,7 +142,7 @@ def _upb_news(category, medias):
 
 
 def upd_news():
-    print('updating news...')
+    log.info('____________ updating news _________________')
 
     meduza_news = parse_rss('https://meduza.io/rss/news')
     interfax_news = parse_rss('http://interfax.ru/rss.asp')
@@ -150,7 +157,7 @@ def upd_news():
     _upb_news('Kremlin', kremlin_news)
     _upb_news('Megafon', megafon_news)
 
-    print('news updated')
+    log.info('============= UPDATED NEWS ================')
 
 
 def get_hot_news(category='Kremlin'):

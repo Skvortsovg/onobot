@@ -63,5 +63,5 @@ updater.dispatcher.add_handler(CommandHandler('start', State))
 updater.dispatcher.add_error_handler(error)
 
 job_queue = updater.job_queue
-job_queue.put(Job(update_all, 900.0), next_t=0.0)
+job_queue.put(Job(update_all, 7200.0), next_t=0.0)
 
