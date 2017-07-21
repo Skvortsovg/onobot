@@ -3,3 +3,5 @@ settings.py
 data/*
 .idea/*
 ._.DS_Store
+start_bot.mpc.sh
+

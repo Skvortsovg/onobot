@@ -27,7 +27,7 @@ logging.basicConfig(
     level=logging.INFO
 )
 
-from menu import BaseState as State
+from menu import BaseState as State, callback_query_handler
 from utils import upd_news, update_clusters, set_hot_news, get_other_hot_news
 
 log = logging.getLogger(__name__)
@@ -44,24 +44,18 @@ def update_all(bot, update):
         update_clusters(category)
         set_hot_news(category)
 
+# from utils import send_async_message, edit_async_message_markup
+# from utils import langs
 
-def button(bot, update):
-    if update.callback_query.data == 'More':
-        headers = get_other_hot_news()
-        bot.editMessageReplyMarkup(chat_id=update.callback_query.message.chat.id,
-            message_id=update.callback_query.message.message_id, reply_markup='')
-        bot.sendMessage(chat_id=update.callback_query.message.chat.id, text = headers, reply_markup=keyboard, parse_mode='html',
-            disable_web_page_preview=1)
-    else:
-        bot.editMessageReplyMarkup(chat_id=update.callback_query.message.chat.id,
-            message_id=update.callback_query.message.message_id, reply_markup='')
+# keyboard = telegram.ReplyKeyboardMarkup([[_('NEW_BUTTON'), _('MAIN_BUTTON'), _('CUBES_BUTTON')]], resize_keyboard=1)
 
 
 updater = Updater(BOT_TOKEN)
 updater.dispatcher.add_handler(MessageHandler(Filters.text, State))
 updater.dispatcher.add_handler(CommandHandler('start', State))
 updater.dispatcher.add_error_handler(error)
+updater.dispatcher.add_handler(CallbackQueryHandler(callback_query_handler))
 
 job_queue = updater.job_queue
-job_queue.put(Job(update_all, 7200.0), next_t=0.0)
+job_queue.put(Job(update_all, 7200.0), next_t=3600.0)
 

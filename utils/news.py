@@ -151,9 +151,15 @@ def upd_news():
     rambler_news = parse_rss('https://news.rambler.ru/rss/head/')
     russia_today_news = parse_rss('https://russian.rt.com/rss')
     vedomosti_news = parse_rss('https://vedomosti.ru/rss/news')
+    radio_svoboda_news = parse_rss('https://www.svoboda.org/api/z-pqpiev-qpp')
+    kommersant_news = parse_rss('https://www.kommersant.ru/RSS/news.xml')
+    republic_news = parse_rss('https://republic.ru/export/news.xml')
+    raintv_news = parse_rss('https://tvrain.ru/export/rss/programs/1018.xml')
 
     kremlin_news = interfax_news + lenta_news + tass_news + rambler_news + russia_today_news
-    megafon_news = meduza_news + vedomosti_news
+    megafon_news = meduza_news + vedomosti_news + radio_svoboda_news + kommersant_news + republic_news + raintv_news
+
+
     _upb_news('Kremlin', kremlin_news)
     _upb_news('Megafon', megafon_news)
 

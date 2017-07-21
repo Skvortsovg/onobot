@@ -5,10 +5,7 @@ from functools import wraps
 import time
 from datetime import datetime, timedelta
 from settings import REDIS_URL
-try:
-    import cPickle as pickle
-except ImportError:
-    import pickle
+import pickle
 
 import logging
 log = logging.getLogger(__name__)

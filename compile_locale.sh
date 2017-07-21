@@ -1,12 +1,12 @@
 #!/bin/bash
 case "$1" in
-  ru)
+  ru|ru)
     set -x
     if [ -r ./locale/$1/LC_MESSAGES/onobot.po ]; then
-        # msgfmt \
-        utils/msgfmt.py \
-            -o ./locale/$1/LC_MESSAGES/onobot.mo \
-            ./locale/$1/LC_MESSAGES/onobot.po
+        msgfmt -o ./locale/$1/LC_MESSAGES/onobot.mo ./locale/$1/LC_MESSAGES/onobot.po
+        #utils/msgfmt.py \
+        #    -o ./locale/$1/LC_MESSAGES/onobot.mo \
+        #   ./locale/$1/LC_MESSAGES/onobot.po
     fi
     ;;
   *)

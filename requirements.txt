@@ -6,6 +6,9 @@ nltk==3.2.2
 requests
 pandas
 scipy
-git+git://github.com/codelucas/newspaper.git
+#git+git://github.com/codelucas/newspaper.git
+newspaper3k
 urllib3
 psycopg2
+pickle
+
