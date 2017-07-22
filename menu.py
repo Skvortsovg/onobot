@@ -205,7 +205,7 @@ class BaseOptionMenuState(BaseState):
 
     def on_enter(self, text=None):
         if text is None:
-            text = '1234567890'
+            text = _('MAIN_MENU_STATE_TEXT')
 
         markup = telegram.ReplyKeyboardMarkup(
             [[
@@ -240,68 +240,37 @@ class KremlinMenuState(BaseOptionMenuState):
     @back_button
     def on_input(self, value):
         button = super(KremlinMenuState, self).on_input(value)
-        category = u'Kremlin'
-        send_news(self.bot, self.update, category, button, initial=True)
+        category = 'Kremlin'
+        send_news(self.bot, self.update, category, button)
 
 
 class MegafonMenuState(BaseOptionMenuState):
     @back_button
     def on_input(self, value):
         button = super(MegafonMenuState, self).on_input(value)
-        category = u'Megafon'
-        if button == 0:
-            text = get_random_news(category)
-        elif button == 1:
-            text = get_hot_news(category)
-        elif button == 2:
-            text = get_rare(chat_id=self.update.message.chat_id, category=category)
-        else:
-            text = '12345'
-        send_async_message(self.bot, self.update, text, parse_mode=telegram.ParseMode.HTML, disable_web_page_preview=1)
+        category = 'Megafon'
+        send_news(self.bot, self.update, category, button)
 
 
-def send_news(bot, update, category, button, detailed=False, initial=False):
+def send_news(bot, update, category, button):
     if button == 0:
         text = get_random_news(category)
+        send_async_message(bot, update, text=text, parse_mode=telegram.ParseMode.HTML, disable_web_page_preview=1)
     elif button == 1:
         text = get_hot_news(category)
+        more_keyboard = telegram.InlineKeyboardMarkup([[telegram.InlineKeyboardButton(_('MORE_BUTTON'), callback_data='More')]])
+        send_async_message(bot, update, text=text, markup=more_keyboard, parse_mode=telegram.ParseMode.HTML, disable_web_page_preview=1)
     elif button == 2:
         text = get_rare(chat_id=update.message.chat_id, category=category)
+        send_async_message(bot, update, text=text, parse_mode=telegram.ParseMode.HTML, disable_web_page_preview=1)
 
-    if detailed is False:
-        txt = _('MORE_BUTTON')
-    else:
-        txt = _('LESS_BUTTON')
-
-    func = encode_callback(send_news)
-    cb = pickle.dumps((func, (category, button, (not detailed),)))
-    keyboard = [[
-        telegram.InlineKeyboardButton(txt, callback_data=cb),
-    ]]
-    markup = telegram.InlineKeyboardMarkup(keyboard)
-
-    if initial is True:
-        f = send_async_message
-
-    else:
-        f = edit_async_message
-    f(
-        bot,
-        update,
-        text,
-        parse_mode=telegram.ParseMode.MARKDOWN,
-        markup=markup
-    )
-
-
-   # send_async_message(bot, update, text, parse_mode=telegram.ParseMode.HTML, disable_web_page_preview=1)
 
 
 
 def callback_query_handler(bot, update):
     query = update.callback_query
     try:
-        func_id, args = pickle.loads(query.data.encode('utf-8'))
+        func_id, args = pickle.loads(query.data)
         #func_id, args = pickle.loads(query.data.encode('utf-8'))
     except Exception as err:
         log.exception(err)
@@ -319,6 +288,7 @@ def callback_query_handler(bot, update):
         )
         if callable(func):
             func(bot, update, args[0], args[1], detailed=args[2])
+
 
 callback_functions = [
     send_news,

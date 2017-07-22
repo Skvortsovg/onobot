@@ -16,6 +16,7 @@ from newspaper import Article
 import re
 import logging
 from .botan import *
+from .decorators import async
 
 
 log = logging.getLogger(__name__)
@@ -86,6 +87,7 @@ def parse_rss(rss_url):
             pass
     return new
 
+
 def _upb_news(category, medias):
     if category == 'Kremlin':
         NEWS_LOCATION = KREMLIN_NEWS_LOCATION
@@ -134,10 +136,9 @@ def _upb_news(category, medias):
         all_time_news_file = pd.DataFrame(columns=['header', 'header_preproc', 'link', 'text', 'text_preproc', 'date', 'source',
             'full_text', 'full_text_preproc'])
     all_time_news_file = all_time_news_file.append(news_file)
-    all_time_news_file.drop_duplicates('link', inplace = True)
+    all_time_news_file.drop_duplicates('link', inplace=True)
     all_time_news_file['date'] = pd.to_datetime(all_time_news_file['date'])
     all_time_news_file.to_csv(ALL_NEWS_LOCATION, index=False)
-    print('news updated')
 
 
 
@@ -215,7 +216,7 @@ def update_clusters(category='Kremlin'):
     for c in np.unique(clusters):
         df.loc[clusters == c, 'cluster'] = c
     df.to_csv(NEWS_LOCATION, index=False)
-    print('clusters updated')
+    log.info('Clusters updated')
 
 
 def set_hot_news(category='Kremlin'):
@@ -238,7 +239,7 @@ def set_hot_news(category='Kremlin'):
     for i, cluster in enumerate((clust_rating[:10])):
         df.set_value(df[df['header'] == (get_cl(df[df['cluster'] == cluster]['header'].values))].index.values[0], 'hot_topic', 10-i)
     df.to_csv(NEWS_LOCATION, index=False)
-    print('hot news updated')
+    log.info('Hot news updated')
 
 
 def get_cl(cluster):
