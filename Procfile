@@ -1,0 +1,1 @@
+bot: ./heroku_start.sh

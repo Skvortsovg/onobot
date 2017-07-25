@@ -27,7 +27,7 @@ logging.basicConfig(
     level=logging.INFO
 )
 
-from menu import BaseState as State, callback_query_handler
+from menu import BaseState as State
 from utils import upd_news, update_clusters, set_hot_news, get_other_hot_news
 
 log = logging.getLogger(__name__)
@@ -65,7 +65,6 @@ updater = Updater(BOT_TOKEN)
 updater.dispatcher.add_handler(MessageHandler(Filters.text, State))
 updater.dispatcher.add_handler(CommandHandler('start', State))
 updater.dispatcher.add_error_handler(error)
-#updater.dispatcher.add_handler(CallbackQueryHandler(callback_query_handler))
 updater.dispatcher.add_handler(CallbackQueryHandler(button))
 
 job_queue = updater.job_queue
